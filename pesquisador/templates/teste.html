@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load bootstrap %}
+{% load staticfiles %}
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="row">
+	<div class="container-fluid">
+		<table class="resultado table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Tipo</th>
+				</tr>	
+			</thead>
+			<tbody>
+				{% for nome in aEmpresa %}
+				<tr>				
+					<td>{{nome.nome}}</td>
+					<td>{{nome.tipo}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	
+	<!--{% for nome in aEmpresa %}
+
+		<h1>{{nome}}</h1>
+
+	{%endfor%} -->
+</body>
+</html>

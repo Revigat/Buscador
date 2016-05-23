@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load bootstrap %}
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+
+	<style>
+
+		#tudo{
+			top: 50%; /* IMPORTANT */
+        	left: 50%; /* IMPORTANT */
+        	position: absolute;
+        	width: 750px;
+        	height: 417px;
+        	margin-top: -208.5px; /* HALF OF THE HEIGHT */
+        	margin-left: -375px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--<div id="tudo">-->
+		<div class="container">
+			<form action="." method="POST">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" name="nome" class="form-control" required="true" placeholder="Search for...">
+							<span class="input-group-btn">
+						        <button class="btn btn-default" type="submit">Go!</button>
+						    </span>
+						</div> 	
+					</div>
+				</div>
+			</form>
+		</div>
+	<!--</div>-->
+</body>
+</html>

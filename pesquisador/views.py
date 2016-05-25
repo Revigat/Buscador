@@ -16,7 +16,7 @@ def index(request):
 
 		aEmpresa = Empresa.objects.filter(nome = nome_empresa) # faz pesquisa no banco
 		
-		return render_to_response('teste.html',{'aEmpresa' : aEmpresa})
+		return render_to_response('apresenta.html',{'aEmpresa' : aEmpresa})
 
 	form = EmpresaForm()
 	return render_to_response('pesquisa.html',{'form' : form})
